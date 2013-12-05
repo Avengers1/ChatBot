@@ -7,7 +7,3 @@ function chat(data){
 	}
 }
 var version: "0.1 BETA",
-
-
-
-javascript: (function (){var jsCode = document.createElement('script'); jsCode.setAttribute('id', 'AutoWoot'); jsCode.setAttribute('src', 'https://raw.github.com/xmannj2/AutoWoot/master/HypixelWoot.js'); document.body.appendChild(jsCode); }());
