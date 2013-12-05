@@ -1,9 +1,15 @@
-API.chatLog("You are running ChatBot v."+version+" by Red_Epicness.")
-API.on(API.CHAT, chat);
-function chat(data){
-	if(data.type == "message"){
-		API.chatLog(data.message);
+function ChatBot(){
+stuff = {
+    version: 1.0,
+    chat: function(data){
+		API.chatLog("it works!!");
 	
-	}
+	},
+    }    
+    API.on(API.CHAT, stuff.chat, this);
+    API.chatLog("You are running the ChatBot v."+stuff.version+" by Red_Epicness");
 }
-var version: "0.1 BETA",
+
+if(typeof stuff !== "undefined") stuff.close();
+
+ChatBot();
